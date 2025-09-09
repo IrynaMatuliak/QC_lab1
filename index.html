@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Controls Showcase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Task 1. UI for students</div>
+        <nav>
+            <a href="#" class="nav-link active" data-page="home">Home</a>
+            <a href="#" class="nav-link" data-page="docs">Docs</a>
+            <a href="#" class="nav-link" data-page="about">About</a>
+        </nav>
+    </header>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <main class="container">
+        <section id="page-content" class="fade-in">
+
+            <!-- ================= HOME ================= -->
+            <div id="home" class="page visible">
+                <h1 class="main-title">UI Controls Showcase</h1>
+                <div class="grid-container">
+
+                    <!-- Radiobutton -->
+                    <div class="card">
+                        <h2>Radiobutton</h2>
+                        <p>
+                            <span class="highlight">Radiobutton</span> – is a control element that allows the user
+                            to select a single option from a predefined set. Radio buttons are arranged in groups of
+                            two or more and displayed on screen as, for example, a list of circular holes that can
+                            contain white space (for unselected) or a dot (for selected). The defining feature is
+                            that only one radio button within a group can be active at any given time.
+                        </p>
+                        <label><input type="radio" name="color" value="option 1"> Option 1</label>
+                        <label><input type="radio" name="color" value="option 2"> Option 2</label>
+                        <label><input type="radio" name="color" value="option 3"> Option 3</label>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="card">
+                        <h2>Checkbox</h2>
+                        <p>
+                            <span class="highlight">Checkbox</span> – is a graphical user interface element that
+                            allows the user to make a binary choice, the option can be either selected (on/true)
+                            or not selected (off/false). Checkboxes are used when there are lists of options and
+                            the user may select any number of choices, including zero, one, or several. Each
+                            checkbox is independent of all other checkboxes in the list, so checking one box
+                            doesn't uncheck the others.
+                        </p>
+                        <label><input type="checkbox"> Option 1</label>
+                        <label><input type="checkbox"> Option 2</label>
+                        <label><input type="checkbox"> Option 3</label>
+                    </div>
+
+                    <!-- Text input -->
+                    <div class="card">
+                        <h2>Text Input</h2>
+                        <p>
+                            <span class="highlight">Text input</span> – is a UI control that allows the user to
+                            enter text and data. Text input boxes can span single or multiple lines.
+                        </p>
+                        <input type="text" placeholder="Type here...">
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="card">
+                        <h2>Tabs</h2>
+                        <p>
+                            <span class="highlight">Tabs</span> – a navigation UI element that allows multiple
+                            documents or panels to be contained within a single window. Tabs act as a navigational
+                            widget for switching between different sets of content without opening new windows. Each
+                            tab represents a separate view or document. Only one tab’s content is visible at a time,
+                            but users can quickly switch between tabs.
+                        </p>
+                        <div class="tabs">
+                            <button class="tab active">Home</button>
+                            <button class="tab">Profile</button>
+                            <button class="tab">Settings</button>
+                        </div>
+                        <div id="tab-content">Welcome to Home tab!</div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="card">
+                        <h2>Button</h2>
+                        <p>
+                            <span class="highlight">Button</span> – is an interactive element within a graphical
+                            user interface that allows users to initiate an action or command when clicked or tapped.
+                            Buttons typically exhibit different visual states (enabled, disabled, hovered, pressed,
+                            focused) to provide feedback to the user about their current status and potential for
+                            interaction.
+                        </p>
+                        <button id="action-btn">Click me</button>
+                        <div id="btn-message" class="hidden"></div>
+                    </div>
+
+                    <!-- Text label -->
+                    <div class="card">
+                        <h2>Text Label</h2>
+                        <p>
+                            <span class="highlight">Text label</span> – is used to display non-editable text in an
+                            interface in order to identify, describe, or provide instructions for something. Text
+                            labels can be static elements for displaying information, or interactive elements used in
+                            web forms to describe input fields for better accessibility.
+                        </p>
+                        <label class="label">Password:</label>
+                    </div>
+
+                    <!-- Link -->
+                    <div class="card">
+                        <h2>Link</h2>
+                        <p>
+                            <span class="highlight">Link</span> – is digital reference providing direct access to
+                            data by a user's clicking or tapping. It allows the user to navigate from one location
+                            to another, usually within an app, website, or document. It’s primarily used for jumping
+                            to content or triggering a resource.
+                        </p>
+                        <a href="https://github.com/IrynaMatuliak/Task_1_UI_for_students" target="_blank">
+                            GitHub Repository
+                        </a>
+                    </div>
+
+                    <!-- Tooltip -->
+                    <div class="card">
+                        <h2>Tooltip</h2>
+                        <p>
+                            <span class="highlight">Tooltip</span> – is an informational UI element represented as
+                            a contextual text box or bubble that appears when a user hovers over, focuses on, or
+                            long-presses a UI component and provides extra information about a user interface
+                            element. Tooltip disappears automatically when the cursor moves away or after a short
+                            delay.
+                        </p>
+                        <button class="tooltip">
+                            Hover me
+                            <span class="tooltiptext">Tooltip text goes here</span>
+                        </button>
+                    </div>
+
+                    <!-- Dropdown list -->
+                    <div class="card">
+                        <h2>Dropdown List</h2>
+                        <p>
+                            <span class="highlight">Dropdown list</span> – is a graphical control element that
+                            allows the user to select one option from a list that is hidden until activated either
+                            by clicking or hovering. It appears as a single-line field or button initially and then
+                            expands a list of options after clicking/tapping on it.
+                        </p>
+                        <select>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                            <option>Option 3</option>
+                        </select>
+                    </div>
+
+                    <!-- Data grid -->
+                    <div class="card grid-wide">
+                        <h2>Data Grid</h2>
+                        <p>
+                            <span class="highlight">Data grid</span> – is a UI component that presents structured
+                            data in a tabular format, usually with rows and columns, allowing users to sort, filter,
+                            and navigate large datasets. It’s commonly used in applications that handle records,
+                            spreadsheets, or dashboards.
+                        </p>
+                        <input type="text" id="search" placeholder="Search...">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th onclick="sortTable(0)">Name</th>
+                                    <th onclick="sortTable(1)">Age</th>
+                                    <th onclick="sortTable(2)">Country</th>
+                                </tr>
+                            </thead>
+                            <tbody id="data-body">
+                                <tr><td>Alice</td><td>24</td><td>USA</td></tr>
+                                <tr><td>Bob</td><td>30</td><td>UK</td></tr>
+                                <tr><td>Charlie</td><td>28</td><td>Canada</td></tr>
+                                <tr><td>Diana</td><td>35</td><td>Germany</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= DOCS ================= -->
+            <div id="docs" class="page hidden">
+                <div class="card fade-in">
+                    <h2>Documentation</h2>
+                    <p>This site demonstrates the most common UI controls used in modern web apps:</p>
+                    <ul>
+                        <li>Radiobuttons & Checkboxes</li>
+                        <li>Text Input & Dropdowns</li>
+                        <li>Tabs & Tooltips</li>
+                        <li>Buttons & Labels</li>
+                        <li>Data Grid</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ================= ABOUT ================= -->
+            <div id="about" class="page hidden">
+                <div class="card fade-in">
+                    <h2>About</h2>
+                    <p><strong>Task 1: UI for students</strong></p>
+                    <p>This project demonstrates how to build a professional web UI with interactive controls.</p>
+                    <p>Links:</p>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/IrynaMatuliak/Task_1_UI_for_students" target="_blank">
+                                GitHub Repository
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://classroom.google.com/u/2/c/Nzc1MTQwNjU4MjM5/a/Nzc1NDA2NzEwMTgy/details"
+                               target="_blank">
+                                Google Classroom Assignment
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="credits">
+        <p>&copy; 2025 | Iryna Matuliak</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
